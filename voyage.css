@@ -1,0 +1,126 @@
+:root {
+    
+    /* Colors */
+
+    --bleu: #006CA4;
+    --orange: #FF7600;
+    --rouge: #CE2823;
+    --gris: #27353D;
+    
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Verdana, sans-serif;
+    width: 80%;
+    margin: 15px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+} 
+
+/* -------------------- Navigation -------------------- */
+
+nav {
+    display: flex;
+    justify-content: end;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    display: block;
+    padding: 8px 15px;
+    background-color: var(--bleu);
+    transition: background-color .2s;
+
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--orange);
+}
+
+/* -------------------- Header -------------------- */
+
+header {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header h1 span:nth-child(1) { color: var(--bleu); }
+header h1 span:nth-child(2) { color: var(--orange); }
+header h1 span:nth-child(3) { color: var(--rouge); }
+
+header h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* -------------------- Main Content -------------------- */
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+article {
+    flex: 1 0 300px;
+
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid #999;
+    box-shadow: 5px 5px 5px #999;
+}
+
+article img {
+    vertical-align: bottom;
+    width: 100%;
+}
+
+article a {
+    color: var(--bleu);
+    text-decoration: none;
+    margin: 10px 5px;
+}
+
+section h3 {
+    font-size: 1.2rem;
+}
+
+/* -------------------- Footer -------------------- */
+
+footer {
+    text-align: center;
+}
+
+footer a {
+    color: var(--bleu);
+    text-decoration: none;
+}
